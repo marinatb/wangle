@@ -1,0 +1,15 @@
+*.deb
+CMakeFiles
+obj-x86_64-linux-gnu
+*.sw*
+
+debian/*
+!/debian/rules
+!/debian/control
+!/debian/libfolly57.install
+!/debian/libfolly-dev.install
+!/debian/changelog
+!/debian/compat
+!/debian/copyright
+!/debian/source
+!/debian/README.Debian

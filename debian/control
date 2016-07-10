@@ -1,0 +1,40 @@
+Source: wangle
+Section: libs
+Priority: extra
+Maintainer: Ryan Goodfellow <rgoodfel@isi.edu>
+Build-Depends: libfolly-dev,
+               cmake,
+               make (>=4),
+               g++ (>=5),
+               debhelper(>=9)
+Standards-Version: 3.9.8
+Homepage: https://github.com/facebook/wangle
+
+Package: libwangle
+Section: libs
+Architecture: amd64
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Facebook C++ Networking library.
+ A set of common client/server abstractions for building services in a 
+ consistent, modular, and composable way.
+ .
+ Wangle is a library that makes it easy to build protocols, application clients,
+ and application servers.
+ .
+ It's like Netty + Finagle smooshed together, but in C++
+
+Package: libwangle-dev
+Section: libdevel
+Architecture: amd64
+Multi-Arch: same
+Depends: libwangle (= ${binary:Version}), ${misc:Depends}
+Description: Facebook C++ Networking library.
+ A set of common client/server abstractions for building services in a 
+ consistent, modular, and composable way.
+ .
+ Wangle is a library that makes it easy to build protocols, application clients,
+ and application servers.
+ .
+ It's like Netty + Finagle smooshed together, but in C++

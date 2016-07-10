@@ -1,0 +1,5 @@
+wangle for Debian
+
+Wangle is a framework providing a set of common client/server abstractions for building services in a consistent, modular, and composable way.
+
+ -- Ryan Goodfellow <rgoodfel@isi.edu>  Fri, 08 Jul 2016 17:56:22 -0700
