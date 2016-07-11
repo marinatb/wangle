@@ -6,7 +6,7 @@ Build-Depends: libfolly-dev,
                cmake,
                make (>=4),
                g++ (>=5),
-               debhelper(>=9)
+               debhelper (>=9)
 Standards-Version: 3.9.8
 Homepage: https://github.com/facebook/wangle
 
@@ -15,7 +15,7 @@ Section: libs
 Architecture: amd64
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}, libfolly57
 Description: Facebook C++ Networking library.
  A set of common client/server abstractions for building services in a 
  consistent, modular, and composable way.
@@ -29,7 +29,7 @@ Package: libwangle-dev
 Section: libdevel
 Architecture: amd64
 Multi-Arch: same
-Depends: libwangle (= ${binary:Version}), ${misc:Depends}
+Depends: libwangle (= ${binary:Version}), ${misc:Depends}, libfolly-dev
 Description: Facebook C++ Networking library.
  A set of common client/server abstractions for building services in a 
  consistent, modular, and composable way.
