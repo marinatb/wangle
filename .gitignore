@@ -6,8 +6,8 @@ obj-x86_64-linux-gnu
 debian/*
 !/debian/rules
 !/debian/control
-!/debian/libfolly57.install
-!/debian/libfolly-dev.install
+!/debian/libwangle.install
+!/debian/libwangle-dev.install
 !/debian/changelog
 !/debian/compat
 !/debian/copyright
