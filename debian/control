@@ -5,7 +5,7 @@ Maintainer: Ryan Goodfellow <rgoodfel@isi.edu>
 Build-Depends: libfolly-dev,
                cmake,
                make (>=4),
-               g++ (>=5),
+               g++ (>=4.9),
                debhelper (>=9)
 Standards-Version: 3.9.8
 Homepage: https://github.com/facebook/wangle
